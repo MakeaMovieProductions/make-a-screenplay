@@ -2,50 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Black List – About</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BoldFrame Studios</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-  <header>
-    <div class="logo">MAKE A SCREENPLAY</div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">🎬 BoldFrame Studios</div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Programs</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#films">Films</a></li>
         <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>About Make A Screenplay</h1>
-      <p>
-        The Black List is a renowned platform dedicated to nurturing written storytelling and empowering writers to maximize their professional potential.
-      </p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Stories that stay with you</h1>
+      <p>Independent films. Bold voices. Real impact.</p>
+      <a href="#films" class="btn">Explore Our Work</a>
+    </div>
+  </section>
 
-    <section class="content">
-      <h2>Our Mission</h2>
-      <p>
-        We aim to radically improve the way great writing is discovered and valued within film, television, and beyond.
-      </p>
-    </section>
-    <section id="blog">
-      <h2>Latest Blog Posts</h2>
-      <p>
-        Coming soon: Behind-the-scenes stories, director’s notes, and more!
-      </p>
-    </section>
-    
-  </main>
+  <!-- About -->
+  <section id="about" class="section fade-in">
+    <h2>About Us</h2>
+    <p>We are a collective of filmmakers, dreamers, and storytellers. Based in <em>somewhere cool</em>, we produce award-winning features that focus on authenticity, emotion, and innovation.</p>
+  </section>
 
+  <!-- Films -->
+  <section id="films" class="section fade-in">
+    <h2>Featured Film: “Shadows & Echoes”</h2>
+    <div class="trailer">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Trailer" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>Set in a dystopian near-future, this critically acclaimed film explores human connection amidst chaos. <em>Coming to festivals near you.</em></p>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="section fade-in">
+    <h2>Behind the Scenes</h2>
+    <div class="blog-post">
+      <h3>📸 Shooting on Location in Iceland</h3>
+      <p>Ever wondered how we captured those sweeping aerial shots? Here's a sneak peek at our 12-day shoot in Iceland's wildest terrain...</p>
+      <a href="#">Read More →</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section fade-in">
+    <h2>Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Make A Screenplay</p>
+    <p>© 2025 BoldFrame Studios | Follow us:</p>
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
   </footer>
 
-  <script src="main.js"></script>
 </body>
 </html>
