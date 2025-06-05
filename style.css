@@ -1,108 +1,135 @@
 :root {
-  --primary: #141e30;
-  --secondary: #243b55;
-  --accent: #e94560;
-  --text: #ffffff;
+    --primary: #1a1a2e;
+    --secondary: #16213e;
+    --accent: #e94560;
+    --light: #f5f6fa;
+    --gray: #888;
 }
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
-  color: var(--text);
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--light);
+    color: var(--primary);
 }
 
-.header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
+header {
+    background: var(--primary);
+    color: var(--light);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
-.nav-links a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: var(--accent);
 }
 
-.nav-links a:hover {
-  color: var(--accent);
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-.home,
-.writers {
-  padding: 4rem 2rem;
-  text-align: center;
+.search-section {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.writer-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+#searchInput {
+    width: 60%;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-.card {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 300px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+.scripts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.script-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(34,34,34,0.08);
+    padding: 1.5rem;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+}
+.script-card:hover {
+    box-shadow: 0 4px 16px rgba(34,34,34,0.16);
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 2rem auto;
-  width: 90%;
-  max-width: 500px;
-  border-radius: 12px;
+.script-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 6px;
+.writer-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
-.contact-form button {
-  background-color: var(--accent);
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.script-genre {
+    font-size: 0.95rem;
+    color: var(--gray);
+    margin-bottom: 0.5rem;
 }
 
-.contact-form button:hover {
-  background-color: #d12d4b;
+.script-desc {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
-.footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ccc;
-  font-size: 0.9rem;
+.profile-link {
+    margin-top: auto;
+    align-self: flex-end;
+    color: var(--secondary);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.profile-link:hover {
+    color: var(--accent);
+}
+
+footer {
+    background: var(--secondary);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+    .scripts-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    #searchInput {
+        width: 95%;
+    }
 }
