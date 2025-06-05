@@ -2,8 +2,8 @@
   {
     "name": "Jane Doe",
     "bio": "Jane is a Brooklyn-based writer focused on psychological thrillers. Her latest work,",
-    "screenplay": "The Mind's Maze",
-    "email": "janedoe@example.com"
+    "image": "images/jane.jpg",
+    "profileUrl": "profiles/jane-doe.html"
   },
   {
     "name": "John Smith",
@@ -12,3 +12,4 @@
     "email": "johnsmith@example.com"
   }
 ]
+
