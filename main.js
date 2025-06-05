@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
           card.onclick = () => location.href = `profile.html?id=${id}`;
           card.innerHTML = `
             <h3>${script.title}</h3>
-            <p><strong>Author:</strong> ${script.author}</p>
             <p><strong>Genre:</strong> ${script.genre}</p>
             <p><strong>Length:</strong> ${script.length}</p>
+            <p><strong>Author:</strong> ${script.author}</p>
           `;
           writersContainer.appendChild(card);
         });
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <h2>${script.title}</h2>
             <p><strong>By:</strong> ${script.author}</p>
             <p><strong>Genre:</strong> ${script.genre}</p>
-            <p>${script.desc}</p>
+            <p><strong>Logline:</strong> ${script.desc}</p>
             <a href="${script.pdf}" target="_blank">📄 Read Full Script</a>
           `;
         } else {
