@@ -1,55 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Make A Screenplay</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptList - Showcase Screenplays & Writers</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <nav>
-      <h1>Make A Screenplay</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#writers">Writers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>ScriptList</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Browse Scripts</a>
+            <a href="#">Writers</a>
+            <a href="#">Submit Script</a>
+        </nav>
+    </header>
 
-  <section id="home" class="home">
-    <div class="intro">
-      <h2>Welcome to Make A Screenplay</h2>
-      <p>A curated platform for discovering registered, unpublished screenplays and connecting with emerging screenwriters.</p>
-      <div class="founders">
-        <h3>About the Founders</h3>
-        <p>Founded by passionate storytellers and developers committed to giving a voice to hidden talent in the screenwriting world.</p>
-      </div>
-    </div>
-  </section>
+    <main>
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="Search scripts or writers...">
+        </section>
+        <section id="scriptsList" class="scripts-list">
+            <!-- Scripts will be injected here by main.js -->
+        </section>
+    </main>
 
-  <section id="writers" class="writers">
-    <h2>Featured Screenwriters</h2>
-    <div class="writer-cards" id="writer-cards">
-      <!-- Writers will load here dynamically -->
-    </div>
-  </section>
-
-  <section id="contact" class="home">
-    <h2>Contact Us</h2>
-    <form class="contact-form" action="https://formsubmit.co/makeamovieprod@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <input type="hidden" name="_captcha" value="false">
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2025 Make A Screenplay. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 ScriptList. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
