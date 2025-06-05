@@ -4,12 +4,6 @@
     "bio": "Jane is a Brooklyn-based writer focused on psychological thrillers. Her latest work,",
     "image": "images/jane.jpg",
     "profileUrl": "profiles/jane-doe.html"
-  },
-  {
-    "name": "John Smith",
-    "bio": "John specializes in sci-fi drama. His latest screenplay is",
-    "screenplay": "Through the Void",
-    "email": "johnsmith@example.com"
   }
 ]
 
