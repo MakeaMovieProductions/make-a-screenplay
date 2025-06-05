@@ -61,7 +61,7 @@ header h1{
 nav {
   display: flex;
   align-items: center:
-  gap: 3rem;
+  gap: 15rem;
   margin-left: -5%;
 }
 
