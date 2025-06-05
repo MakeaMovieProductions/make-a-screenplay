@@ -71,6 +71,7 @@ nav a{
   transition: color 0.2s ease;
   text-decoration: none;
   color: inherit;
+  gap: 20px; /* Space between buttons */
 }
 
 nav a:hover{
