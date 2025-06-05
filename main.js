@@ -1,30 +1,41 @@
-const scripts = [
-    {
-        title: "The Last Sunrise",
-        writer: "Aarav Mehta",
-        genre: "Drama, Thriller",
-        description: "A retired detective is pulled back into the world of crime when a mysterious letter arrives.",
-        profile: "aarav-mehta.html"
-    },
-    {
-        title: "Cosmic Hearts",
-        writer: "Priya Sharma",
-        genre: "Romance, Sci-Fi",
-        description: "Two astronauts stranded on Mars discover love and the secret to survival.",
-        profile: "priya-sharma.html"
-    },
-    {
-        title: "Mumbai Shadows",
-        writer: "Rohan Kapoor",
-        genre: "Crime, Action",
-        description: "A gritty tale of an undercover cop infiltrating Mumbai’s most notorious gang.",
-        profile: "rohan-kapoor.html"
-    },
-    {
-        title: "The Forgotten Song",
-        writer: "Meera Joshi",
-        genre: "Musical, Family",
-        description: "A young girl rediscovers her family's lost musical legacy.",
-        profile: "meera-joshi.html"
-    }
-];
+// Load screenplays and render cards
+async function loadScreenplays() {
+  const response = await fetch('./data/screenplays.json');
+  const screenplays = await response.json();
+  const container = document.getElementById('screenplay-list');
+  container.innerHTML = '';
+
+  screenplays.forEach(sp => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <h3>${sp.title}</h3>
+      <p>${sp.summary}</p>
+      <a href="${sp.samplePdf}" target="_blank">Download Sample PDF</a>
+    `;
+    container.appendChild(card);
+  });
+}
+
+// Load writers and render cards
+async function loadWriters() {
+  const response = await fetch('./data/writers.json');
+  const writers = await response.json();
+  const container = document.getElementById('writer-list');
+  container.innerHTML = '';
+
+  writers.forEach(writer => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <h3>${writer.name}</h3>
+      <p>${writer.bio}</p>
+    `;
+    container.appendChild(card);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadScreenplays();
+  loadWriters();
+});
