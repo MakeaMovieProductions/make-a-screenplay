@@ -1,35 +1,17 @@
-#screenplay-list, #writer-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.card {
-  background: #222;
-  color: #eee;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Seoge UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif ;
+  background-color: black;
+  color: #e7e7e7;
+  min-height: 100vh;
+  line-height: 1.5;
 }
 
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.8);
-}
-
-button {
-  background: #f04e30;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background: #d94426;
-}
+/* GRADIENT AND LAYER BLUR EFFECT */
