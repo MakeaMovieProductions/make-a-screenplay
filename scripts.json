@@ -1,26 +1,26 @@
 {
   "1": {
-    "title": "Burning Skies",
-    "author": "Aisha Patel",
+    "title": "Mute",
+    "author": "Maruthi Score Chesi",
     "genre": "Drama",
     "length": "104 pages",
-    "pdf": "assets/burning_skies.pdf",
+    "pdf": "screenplays/short/Mute_ZerothDraft.pdf",
     "desc": "A political thriller set in a dystopian future."
   },
   "2": {
-    "title": "Neon Karma",
-    "author": "Rafael Gomez",
+    "title": "RESUME",
+    "author": "Sai Krishna Meka",
     "genre": "Sci-Fi",
     "length": "96 pages",
-    "pdf": "assets/neon_karma.pdf",
+    "pdf": "screenplays/short/RESUME_ZerothDraft.pdf",
     "desc": "In a neon-lit Tokyo, karma is digital — and deadly."
   },
   "3": {
-    "title": "Glass Pulse",
-    "author": "Mei Chen",
+    "title": "Surprise",
+    "author": "Sai Krishna Meka",
     "genre": "Thriller",
     "length": "110 pages",
-    "pdf": "assets/glass_pulse.pdf",
+    "pdf": "screenplays/short/Surprise_ ZerothDraft.pdf",
     "desc": "A neuroscientist uncovers a pulse signal that triggers violence in people’s minds."
   }
 }
