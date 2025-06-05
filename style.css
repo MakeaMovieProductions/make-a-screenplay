@@ -61,13 +61,13 @@ header h1{
 nav {
   display: flex;
   align-items: center:
-  gap: 15rem;
+  gap: 3rem;
   margin-left: -5%;
 }
 
 nav a{
   font-size: 1rem;
-  letter-spacing: 1rem;
+  letter-spacing: 0.1rem;
   transition: color 0.2s ease;
   text-decoration: none;
   color: inherit;
