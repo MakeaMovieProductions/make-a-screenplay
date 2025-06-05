@@ -1,40 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Aarav Mehta - Writer Profile</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScriptList – Discover Award-Winning Screenplays</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- You can use Font Awesome or similar for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Aarav Mehta</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Browse Scripts</a>
-            <a href="#">Writers</a>
-            <a href="#">Submit Script</a>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="ScriptList Logo" style="height:40px;vertical-align:middle;">
+      <span style="font-weight:bold;font-size:1.7rem;vertical-align:middle;">ScriptList</span>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#trending">Trending</a>
+      <a href="#new">New Arrivals</a>
+      <a href="#writers">Writers</a>
+      <a href="#submit" class="cta-nav">Submit Script</a>
+    </nav>
+  </header>
 
-    <main class="profile-main">
-        <section class="profile-info">
-            <h2>About Aarav Mehta</h2>
-            <p>Aarav is a seasoned screenwriter specializing in thrillers and dramas. His work often explores the complexities of human nature and justice.</p>
-            <h3>Notable Works</h3>
-            <ul>
-                <li>The Last Sunrise</li>
-                <li>Shadows of Justice</li>
-                <li>Silent Witness</li>
-            </ul>
-            <h3>Contact</h3>
-            <p>Email: aarav.mehta@example.com</p>
-            <p>Website: <a href="https://aaravmehta.com" target="_blank" rel="noopener">aaravmehta.com</a></p>
-        </section>
-    </main>
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('hero-bg.jpg'); background-size:cover; background-position:center;">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1><i class="fa-solid fa-film"></i> Discover Award-Winning Screenplays</h1>
+      <p>Browse, read, and connect with top screenwriters from around the world.</p>
+      <a href="#trending" class="cta-button"><i class="fa-solid fa-arrow-right"></i> Browse Scripts</a>
+    </div>
+    <!-- Optional: muted autoplay video background
+    <video autoplay loop muted playsinline poster="hero-poster.jpg" class="hero-video">
+      <source src="hero-trailer.mp4" type="video/mp4">
+    </video>
+    -->
+  </section>
 
-    <footer>
-        <p>&copy; 2025 ScriptList. All rights reserved.</p>
-    </footer>
+  <!-- Search Bar -->
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search scripts or writers...">
+    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+  </section>
+
+  <!-- Trending Scripts Carousel -->
+  <section class="carousel-row" id="trending">
+    <h2><i class="fa-solid fa-fire"></i> Trending Scripts</h2>
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="posters/last-sunrise.jpg" alt="The Last Sunrise Poster" class="poster">
+        <div class="carousel-info">
+          <h3>The Last Sunrise</h3>
+          <p class="writer"><i class="fa-solid fa-user"></i> Aarav Mehta</p>
+          <p class="genre"><i class="fa-solid fa-mask"></i> Drama, Thriller</p>
+          <div class="actions">
+            <a href="aarav-mehta.html" class="profile-link"><i class="fa-solid fa-id-badge"></i> Writer Profile</a>
+            <button class="read-logline"><i class="fa-solid fa-book-open"></i> Logline</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="posters/cosmic-hearts.jpg" alt="Cosmic Hearts Poster" class="poster">
+        <div class="carousel-info">
+          <h3>Cosmic Hearts</h3>
+          <p class="writer"><i class="fa-solid fa-user"></i> Priya Sharma</p>
+          <p class="genre"><i class="fa-solid fa-heart"></i> Romance, Sci-Fi</p>
+          <div class="actions">
+            <a href="priya-sharma.html" class="profile-link"><i class="fa-solid fa-id-badge"></i> Writer Profile</a>
+            <button class="read-logline"><i class="fa-solid fa-book-open"></i> Logline</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more carousel items as needed -->
+    </div>
+  </section>
+
+  <!-- New Arrivals Carousel -->
+  <section class="carousel-row" id="new">
+    <h2><i class="fa-solid fa-star"></i> New Arrivals</h2>
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="posters/mumbai-shadows.jpg" alt="Mumbai Shadows Poster" class="poster">
+        <div class="carousel-info">
+          <h3>Mumbai Shadows</h3>
+          <p class="writer"><i class="fa-solid fa-user"></i> Rohan Kapoor</p>
+          <p class="genre"><i class="fa-solid fa-gun"></i> Crime, Action</p>
+          <div class="actions">
+            <a href="rohan-kapoor.html" class="profile-link"><i class="fa-solid fa-id-badge"></i> Writer Profile</a>
+            <button class="read-logline"><i class="fa-solid fa-book-open"></i> Logline</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="posters/forgotten-song.jpg" alt="The Forgotten Song Poster" class="poster">
+        <div class="carousel-info">
+          <h3>The Forgotten Song</h3>
+          <p class="writer"><i class="fa-solid fa-user"></i> Meera Joshi</p>
+          <p class="genre"><i class="fa-solid fa-music"></i> Musical, Family</p>
+          <div class="actions">
+            <a href="meera-joshi.html" class="profile-link"><i class="fa-solid fa-id-badge"></i> Writer Profile</a>
+            <button class="read-logline"><i class="fa-solid fa-book-open"></i> Logline</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more carousel items as needed -->
+    </div>
+  </section>
+
+  <!-- Featured Writers -->
+  <section id="writers" class="writers-section">
+    <h2><i class="fa-solid fa-pen-nib"></i> Featured Writers</h2>
+    <div class="writers-list">
+      <div class="writer-card">
+        <img src="writers/aarav-mehta.jpg" alt="Aarav Mehta" class="writer-photo">
+        <h3>Aarav Mehta</h3>
+        <p>Drama, Thriller</p>
+        <a href="aarav-mehta.html" class="profile-link"><i class="fa-solid fa-id-badge"></i> View Profile</a>
+      </div>
+      <div class="writer-card">
+        <img src="writers/priya-sharma.jpg" alt="Priya Sharma" class="writer-photo">
+        <h3>Priya Sharma</h3>
+        <p>Romance, Sci-Fi</p>
+        <a href="priya-sharma.html" class="profile-link"><i class="fa-solid fa-id-badge"></i> View Profile</a>
+      </div>
+      <div class="writer-card">
+        <img src="writers/rohan-kapoor.jpg" alt="Rohan Kapoor" class="writer-photo">
+        <h3>Rohan Kapoor</h3>
+        <p>Crime, Action</p>
+        <a href="rohan-kapoor.html" class="profile-link"><i class="fa-solid fa-id-badge"></i> View Profile</a>
+      </div>
+      <div class="writer-card">
+        <img src="writers/meera-joshi.jpg" alt="Meera Joshi" class="writer-photo">
+        <h3>Meera Joshi</h3>
+        <p>Musical, Family</p>
+        <a href="meera-joshi.html" class="profile-link"><i class="fa-solid fa-id-badge"></i> View Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section" id="submit">
+    <div class="cta-content">
+      <h2>Ready to Share Your Script?</h2>
+      <p>Join ScriptList and get your screenplay seen by industry insiders.</p>
+      <a href="#" class="cta-button"><i class="fa-solid fa-upload"></i> Submit Your Script</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p>&copy; 2025 ScriptList. All rights reserved.</p>
+  </footer>
 </body>
 </html>
